@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+a 
+{ 
+    text-decoration: none; 
+    color:white;
+} 
+header{
+    background: black;
+    color:rgb(170, 170, 170);
+    padding: 1%;
+    width: 98%;
+}
+.contentBlocks{
+    float:left;
+    width: 70%;
+    height: 92.5%;
+    overflow-y: scroll;
+}
+.Block{
+    float:left;
+    margin: 1%;
+    width: 30%;
+    height: 70%;
+    border: 2px solid rgb(190, 190, 190);
+    border-radius: 2%;
+}
+.Block:hover{
+   background: rgb(206, 206, 206);
+   -webkit-transform: scale(1.025);
+   -ms-transform: scale(1.025);
+   transform: scale(1.025);
+}
+.priceBlock{
+    float:left;
+    margin: 1%;
+    width: 96%;
+    height: 98%;
+    border: 2px solid white;
+    background: white;
+    overflow-y: auto;
+}
+.priceBlocks
+{
+    float:right;
+    background: white;
+    width: 30%;
+    height: 92.5%; 
+    
+}
+.image
+{
+    width: 98.5%;
+    height: 40%;
+    padding: 1%;
+}
+.nameProduct
+{
+    text-align: center;
+    width: 98%;
+    padding: 1%;
+    font-weight: bold;
+}
+.describeProduct
+{
+    width: 98%;
+    height: 40%;
+    padding: 1%;
+}
+.price
+{
+    float:left;
+    width: 40%;
+    padding: 7%;
+    font: italic bold 130% Georgia, serif;
+}
+.button {
+    float:right;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    bottom: 0;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.button1 {
+    background-color: #4CAF50;
+    color: white; 
+    
+}
+
+.button1:hover {
+    background-color: white;
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
+.buttonClean {
+    background-color: brown;
+    color: white; 
+    
+}
+
+.buttonClean:hover {
+    background-color: white;
+    color: brown;
+    border: 2px solid brown;
+}
+
+
+.priceHeader
+{
+    background:#4CAF50;
+    width: 96%;
+    padding: 2%; 
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+}
+.priceFooter
+{
+    background:#4CAF50;
+    width: 96%;
+    height: 5.5%;
+    padding: 2%; 
+    text-align: center;
+    font-size: 100%;
+}
+.priceProduct
+{
+    background: rgb(228, 228, 228);
+    width: 96%;
+    height: 68%;
+    padding: 2%; 
+}
+.nameNewBlock
+{
+    width: 48%;
+    height: 15%;
+    float:left;
+    padding: 1%;
+}
+.priceNewBlock
+{
+    width: 10%;
+    height: 13.5%;
+    float: left;
+    padding: 1%;
+    text-align: center;
+    margin-top: 2%;
+}
+.numericNewBlock
+{
+    background: white;
+    width: 10%;
+    float: left;
+    padding: 1%;
+    text-align: center;
+    margin: 3.5%;
+}
+.buttonNewBlock
+{
+    background: brown;
+    width: 19%;
+    height: 7%;
+    float: left;
+    text-align: center;
+    padding: 2% 1% 1% 1%;
+    color: ghostwhite;
+    border: brown;
+    border-radius: 10%;
+    margin-top: 3%;
+}
+.buttonNewBlock:hover
+{
+    color:brown;
+    background: ghostwhite;
+    cursor: pointer;
+}
+.resultBasket
+{
+    float: left;
+    width: 48%;
+    color:white;
+    margin-bottom: 5%;
+}
+.backgroundRegistration
+{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+.registrationForm
+{
+    position: absolute;
+    width: 40%;
+    height: 85%;
+    background: white;
+    border: slategrey;
+    border-radius: 5%;
+    display: none;
+    margin-left: 30%; 
+}

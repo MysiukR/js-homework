@@ -1,0 +1,123 @@
+﻿<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Online Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="registrationFrom.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <a href="">Online Shop</a>
+  </header>
+  <content>
+    <article class="contentBlocks">
+      <div class="Block">
+        <img class="image" src="photo/hp.png" alt="Photo of hp">
+        <div class="describeProduct">
+          <div id="idNameProduct1" class="nameProduct">Ноутбук HP 255 G6 (2EW01ES) Dark Ash</div>
+          <br> Екран 15.6" (1366x768) WXGA HD, матовий / AMD Dual-Core A6-9220 (2.5 - 2.9 ГГц) / RAM 4 ГБ / HDD 500 ГБ / AMD
+          Radeon R4 / без ОД / LAN / Wi-Fi / Bluetooth / веб-камера / DOS / 1.86 кг
+        </div>
+        <div id="idPrice1" class="price">
+          200
+        </div>
+        <button class="button button1" onclick="addProduct(1)">Купити</button>
+      </div>
+      <div class="Block">
+        <img class="image" src="photo/asus.png" alt="Photo of asus">
+        <div class="describeProduct">
+          <div id="idNameProduct2" class="nameProduct">Ноутбук Asus VivoBook Max X541NC (X541NC-GO021) Chocolate Black</div>
+          <br> Екран 15.6" (1366x768) HD, глянсовий / Intel Celeron N3350 (1.1 - 2.4 ГГц) / RAM 4 ГБ / HDD 500 ГБ / nVidia GeForce
+          810M / без ОД / LAN / Wi-Fi / Bluetooth / веб-камера / без ОС / 2 кг
+        </div>
+        <div id="idPrice2" class="price">
+          250
+        </div>
+        <button class="button button1" onclick="addProduct(2)">Купити</button>
+      </div>
+      <div class="Block">
+        <img class="image" src="photo/dell.png" alt="Photo of dell">
+        <div class="describeProduct">
+          <div id="idNameProduct3" class="nameProduct">Ноутбук Dell Inspiron 3552 (cel3060\4\500\dvd) Black</div>
+          <br> Екран 15.6" (1366x768) HD, глянцевий / Intel Celeron N3060 (1.6 - 2.48 ГГц) / RAM 4 ГБ / HDD 500 ГБ / Intel HD
+          Graphics 400 / DVD+/-RW / Wi-Fi / Bluetooth / веб-камера / Linux / 2.14 кг
+        </div>
+        <div id="idPrice3" class="price">
+          300
+        </div>
+        <button class="button button1" onclick="addProduct(3)">Купити</button>
+      </div>
+      <div class="Block">
+        <img class="image" src="photo/acer.png" alt="Photo of macbook">
+        <div class="describeProduct">
+          <div id="idNameProduct4" class="nameProduct">Ноутбук Acer Aspire 3 A315-21 (NX.GNVEU.014) Black</div>
+          <br> Екран 15.6" (1366x768) WXGA HD, матовий / AMD Dual-Core E2-9000 (1.8 - 2.2 ГГц) / RAM 4 ГБ / HDD 500 ГБ / AMD
+          Radeon R2 / без ОД / LAN / Wi-Fi / Bluetooth / веб-камера / Linux / 2.1 кг
+        </div>
+        <div id="idPrice4" class="price">
+          350
+        </div>
+        <button class="button button1" onclick="addProduct(4)">Купити</button>
+      </div>
+    </article>
+    <article class="priceBlocks">
+      <div class="priceBlock">
+        <div class="priceHeader">
+          Корзина
+        </div>
+        <div id="idPriceProduct" class="priceProduct">
+          <div id="emptyProduct">
+            Ваша корзина пуста
+          </div>
+        </div>
+        <div class="priceFooter">
+          <div id="numbersProduct" class="resultBasket">
+            Кількість:
+          </div>
+          <div id="sumProduct" class="resultBasket">
+            Загальна сума:
+          </div>
+          <center>
+            <button class="button buttonClean" onclick="cleanAll()">Очистити корзину</button>
+            <button class="button button1" onclick="showRegistration()">Оформити</button>
+          </center>
+        </div>
+      </div>
+    </article>
+    <article id="idBackgroundRegistration" class="backgroundRegistration">
+    </article>
+    <article id="idRegistrationForm" class="registrationForm">
+      <span onclick="closeRegistrationForm()" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content" action="/action_page.php">
+        <div class="container">
+          <h1>Оформлення</h1>
+          <hr>
+          <label for="email">
+            <b>ПІБ</b>
+            <input type="text" placeholder="Введіть ПІБ" name="text" required>
+          </label>
+          <label for="tel">
+            <b>Телефон</b>
+            <input type="tel" placeholder="Введіть телефон" name="psw" required>
+          </label>
+          <label for="address">
+            <b>Адрес</b>
+            <input type="text" placeholder="Введіть адрес" name="address" required>
+          </label>
+          <div class="clearfix">
+            <button type="submit" onclick="closeRegistrationForm()" id="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+      </div>
+    </article>
+  </content>
+</body>
+
+</html>
