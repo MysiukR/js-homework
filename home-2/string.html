@@ -1,0 +1,52 @@
+﻿<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Capitalize</title>
+</head>
+<body>
+ <p id="resTruncate"></p>
+ <p id="resNumberLetter"></p>
+ <p id="resSearchWords"></p>
+ <p id="resSearchDigitals"></p>
+  <script>
+  // 1. Написати функцію, скорочує строку і додає три крапки 
+  function truncate(str, maxlength) {
+     var res = str.substring(0,maxlength);
+     document.getElementById("resTruncate").innerHTML = res.concat("...");
+  }
+  truncate("рудщ ві віав",3);// = "руд..."
+  
+  // 2. Знайти кількість букв "а" в речені "Назва Львів дана місту на честь князя Лева Даниловича, сина засновника Львова Данила Галицького." використовуючи indexOf
+   function numberLetter(str) {
+    var position = str.indexOf("а");
+	var count=0;
+    while(position > -1) {
+      position = str.indexOf("а", position+1);
+	  count++;
+    }
+	document.getElementById("resNumberLetter").innerHTML = count;
+  }
+  numberLetter("Назва Львів дана місту на честь князя Лева Даниловича, сина засновника Львова Данила Галицького.");
+  
+  // 3. Написати функцію, яка буде фільтрувати рядок і видиляти слова "xxxx" i "polityka"
+   function searchWords(el) {
+    if (el.indexOf("xxxx") > -1 || el.indexOf("polityka") > -1) {
+      el = el.replace(/xxxx/g, '<span style="background:yellow;">xxxx</span>');
+	  el = el.replace(/polityka/g, '<span style="background:yellow;">polityka</span>');
+    }
+	document.getElementById("resSearchWords").innerHTML = el;
+  }
+  searchWords("Написати функцію, яка буде фільтрувати рядок і видиляти слова xxxx i polityka");
+  
+  // 4. Профільтрувати строку "іва 24 уц ац34434ауку" і виветси тільки цифри
+  function searchDigital(el) {
+    var num = el.replace(/[^0-9]/g,'');
+	document.getElementById("resSearchDigitals").innerHTML = num;
+  }
+  searchDigital("іва 24 уц ац34434ауку");
+  </script>
+ 
+</body>
+</html>

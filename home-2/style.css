@@ -1,0 +1,12 @@
+ol {
+    background: gray;
+    padding: 20px;
+	color:white;
+}
+
+ol li {
+    background: lightgray;
+    color: darkblue;
+    padding: 5px;
+    margin-left: 35px;
+}
