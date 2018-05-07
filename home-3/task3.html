@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+
+<body>
+  <h2>Add new bookmarks</h2>
+  <!-- Форма для зберігання закладки -->
+  <label>Title:
+    <input id="title" name="title" />
+  </label>
+  <label>URL:
+    <input id="url" name="url" />
+  </label>
+  <button onclick="addBookmark('url','title');">Save</button>
+
+  <!-- Список збережених закладок -->
+  <h2>Your bookmarks</h2>
+  <div class="bookmark-list">
+    <!-- Виводити як лінки, при кліки відкривати в новій вкладці -->
+    <a id="allLinks" href="#url" target="_blank"></a>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

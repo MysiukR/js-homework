@@ -1,0 +1,48 @@
+﻿<html>
+
+<head>
+
+	<meta charset="UTF-8">
+	<title>JS Homework 2: querySelector, date, timeout</title>
+</head>
+
+<body>
+	<h1>
+		Weather in Ukraine
+	</h1>
+	<ul>
+		<li>Lviv -
+			<span class="temperature">null</span>
+		</li>
+		<li>Kiev -
+			<span class="temperature">null</span>
+		</li>
+		<li>Dnipro -
+			<span class="temperature">null</span>
+		</li>
+		<li>Uzhorod -
+			<span class="temperature">null</span>
+		</li>
+		<li>Gorodok -
+			<span class="temperature">null</span>
+		</li>
+	</ul>
+	<script type="text/javascript">
+		// Є обєкт за даними 
+		let weatherObj = {
+			Lviv: 12,
+			Kiev: 20,
+			Dnipro: 22,
+			Uzhorod: 19,
+			Gorodok: 14
+		};
+
+		var count = 0;
+		for (var key in weatherObj) {
+			document.querySelectorAll("span")[count].innerText = weatherObj[key];
+			count++;
+		}
+	</script>
+</body>
+
+</html>
