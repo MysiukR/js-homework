@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(25,35,45);
+    color: rgb(200,200,200);
+    font-family: 'Titillium Web';
+}
+
+main {
+    padding: 15px;
+    flex-direction: column;
+    align-content: center;
+    float: left;
+    width: 97%;
+    text-align: center
+}
+
+aside{
+    margin-top: 1%;
+    width: 100%;
+    float:left;
+}
+
+.description {
+    text-align: center;
+    color: lightgrey;
+}
+
+.name {
+    padding-bottom: 60px;
+    color: lightgrey;
+    margin: auto;
+    font-size: 31pt;
+
+}
+
+.cityName {
+    color: white;
+    text-align: center;
+    font-size: 25pt;
+    padding: 10px;
+}
+
+
+.city {
+    margin: 1%;
+    margin-bottom: auto;
+    border: lightgrey solid 3px;
+    width: 30%;
+    float: left;
+}
+
+.city:hover{
+    box-shadow: 0 0 20px 10px rgb(5,15,25);
+    background: rgb(49, 49, 49);
+}
+
+.newcity
+{
+    display: none;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1% 2px 0 0;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background:  rgb(25,35,45);
+    color: white;
+    border: 2px solid #555555;
+}
+
+.button:hover {
+    background-color: #555555;
+    color: white;
+}
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 600px) {
+  
+    main {
+        float: none;
+    }
+    .city
+    {
+        float: none;
+        width: 95%;
+    }
+}

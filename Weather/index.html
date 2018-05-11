@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <header class="name">Current weather</header>
+        <section class="cities">
+            <div class="city">
+                <header class="cityName">Lviv</header>
+                <div class="description">
+                    <img class="iconWeather" src="">
+                    <p class="temperature">Temperature: null°C</p>
+                    <p class="humidity">Humidity: null%</p>
+                    <p class="pressure">Pressure: null hPa</p>
+                    <p class="clouds">Clouds: null</p>
+                </div>
+            </div>
+            <div class="city">
+                <header class="cityName">London</header>
+                <div class="description">
+                    <img class="iconWeather" src="">
+                    <p class="temperature">Temperature: null°C</p>
+                    <p class="humidity">Humidity: null%</p>
+                    <p class="pressure">Pressure: null hPa</p>
+                    <p class="clouds">Clouds: null</p>
+                </div>
+            </div>
+            <div class="city">
+                <header class="cityName">California</header>
+                <div class="description">
+                    <img class="iconWeather" src="">
+                    <p class="temperature">Temperature: null°C</p>
+                    <p class="humidity">Humidity: null%</p>
+                    <p class="pressure">Pressure: null hPa</p>
+                    <p class="clouds">Clouds: null</p>
+                </div>
+            </div>
+            <div class="city newcity">
+                <header class="cityName">Paris</header>
+                <div class="description">
+                    <img class="iconWeather" src="">
+                    <p class="temperature">Temperature: null°C</p>
+                    <p class="humidity">Humidity: null%</p>
+                    <p class="pressure">Pressure: null hPa</p>
+                    <p class="clouds">Clouds: null</p>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <label for="city">Choose city:</label>
+            <select id="city" name="city">
+                <option value="703448">Kiev</option>
+                <option value="2988507">Paris</option>
+                <option value="4905599">Pekin</option>
+            </select>
+            <button class="button" onclick="updateWeather();">Refresh</button>
+            <button class="button" onclick="addNewCity('Paris',2988507);">Add city</button>
+        </aside>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
