@@ -13,6 +13,7 @@ function addNameProduct(productNumber, count) {
 function addPriceProduct(productNumber, count) {
     var price = document.getElementById("idPrice" + productNumber).innerHTML;
     var para1 = document.createElement("div");
+    price = price.slice(0, price.lastIndexOf("$"));
     var newBlock = document.createTextNode(price);
     para1.appendChild(newBlock);
     para1.setAttribute("id", "PriceDiv" + count);
@@ -53,6 +54,9 @@ function removeProduct(ButtonDiv) {
     document.getElementById("PriceDiv" + ButtonDiv).style.display = "none";
     document.getElementById("TextDiv" + ButtonDiv).style.display = "none";
     document.getElementById("ButtonDiv" + ButtonDiv).style.display = "none";
+    products.pop();
+    count--;
+    numbersProduct(count);
 }
 
 function searchDigital(el) {
@@ -64,9 +68,13 @@ function searchDigital(el) {
 function numbersProduct(count) {
     var totalNumber = 0;
     var totalSum = 0;
+    var price;
+    var number;
     for (var i = 1; i < products.length + 1; i++) {
-        totalNumber = totalNumber + Number(document.getElementById("TextDiv" + i).value);
-        totalSum = totalSum + Number(document.getElementById("PriceDiv" + i).innerHTML * document.getElementById("TextDiv" + i).value);
+        number = document.getElementById("TextDiv" + i).value;
+        price = document.getElementById("PriceDiv" + i).innerHTML;
+        totalNumber = totalNumber + Number(number);
+        totalSum = totalSum + Number(price * number);
     }
     document.getElementById("numbersProduct").innerHTML = "Кількість: " + totalNumber;
     document.getElementById("sumProduct").innerHTML = "Сума: " + totalSum;
